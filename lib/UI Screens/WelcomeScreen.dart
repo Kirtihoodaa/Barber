@@ -61,6 +61,7 @@ class WelcomeScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 15),
 
+
                     // Register Button
                     SizedBox(
                       width: 300,
