@@ -125,7 +125,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     vertical: 14,
                   ),
                   decoration: BoxDecoration(
-                    color: Colors.grey.shade900,
+                    color: Colors.grey.shade900.withOpacity(0.7),
                     borderRadius: BorderRadius.circular(6),
                   ),
                   child: Row(
@@ -153,7 +153,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     vertical: 14,
                   ),
                   decoration: BoxDecoration(
-                    color: Colors.grey.shade900,
+                    color: Colors.grey.shade900.withOpacity(0.7),
                     borderRadius: BorderRadius.circular(6),
                   ),
                   child: Row(

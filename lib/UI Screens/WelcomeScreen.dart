@@ -1,6 +1,6 @@
 import 'package:barber/Theme/CustomButton.dart';
-import 'package:barber/UI%20Screens/LoginScreen.dart';
-import 'package:barber/UI%20Screens/RegisterScreen.dart';
+import 'package:barber/UI Screens/LoginScreen.dart';
+import 'package:barber/UI Screens/RegisterScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -12,23 +12,25 @@ class WelcomeScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          // Background image with opacity
+          // 🔹 Background image with reduced opacity
           Container(
             decoration: const BoxDecoration(
               image: DecorationImage(
                 image: AssetImage("Assets/MainScreen/welcomepage.jpeg"),
                 fit: BoxFit.cover,
+                // ↓ Reduce brightness & opacity
                 colorFilter: ColorFilter.mode(Colors.black54, BlendMode.darken),
               ),
             ),
           ),
 
-          // Content
+          // 🔹 Foreground content
           Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               const SizedBox(height: 80),
-              // Logo text
+
+              // App name / logo
               const Center(
                 child: Text(
                   "CHOPER",
@@ -46,7 +48,7 @@ class WelcomeScreen extends StatelessWidget {
                 padding: const EdgeInsets.only(bottom: 90),
                 child: Column(
                   children: [
-                    // Login Button
+                    // Login button
                     SizedBox(
                       width: 300,
                       height: 50,
@@ -61,8 +63,7 @@ class WelcomeScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 15),
 
-
-                    // Register Button
+                    // Register button
                     SizedBox(
                       width: 300,
                       height: 50,
